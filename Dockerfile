@@ -9,3 +9,4 @@ RUN apt install -y libz-dev libmemcached-dev && pecl install memcached && docker
 
 RUN pecl install mongodb && docker-php-ext-enable mongodb
 
+RUN docker-php-ext-install sockets
