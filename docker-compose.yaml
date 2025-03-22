@@ -26,3 +26,10 @@ services:
       - discovery.type=single-node
   mensageria:
     image: rabbitmq:3.9.29
+  grafos:
+    image: neo4j:5.13.0-community
+    environment:
+      - NEO4J_AUTH=neo4j/12345678
+    ports:
+      - "7474:7474"
+      - "7687:7687"
