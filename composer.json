@@ -4,6 +4,7 @@
         "ext-redis": "*",
         "ext-memcached": "*",
         "ext-mongodb": "*",
-        "mongodb/mongodb": "^1.21"
+        "mongodb/mongodb": "^1.21",
+        "aws/aws-sdk-php": "^3.342"
     }
 }
