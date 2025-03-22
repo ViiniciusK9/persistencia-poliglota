@@ -19,3 +19,8 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=username
       - MONGO_INITDB_ROOT_PASSWORD=password
       - MONGO_INITDB_DATABASE=mongodb-database
+  busca_textual:
+    image: elasticsearch:8.10.2
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
